@@ -5,7 +5,7 @@ class Route{
 
     private static $routes = [];
 
-    private static $URL_BASE = "/mvc/public";
+    private static $URL_BASE = "/SDS25/public";
 
     public static function get($uri, $callback){
         self::$routes['GET'][self::$URL_BASE.$uri] = $callback;
