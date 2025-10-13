@@ -1,22 +1,25 @@
 <?php
 namespace app\controllers;
-class HomeController{
+use lib\controller;
+use app\models\VisitanteModel;
+use Visitante;
+class HomeController extends controller{
     public function index(){
         return $this->view('HomeView');
     }
-    public function view($vista, $data=[]){
-        //require_once("../app/views/HomeView.php");
-        extract($data);
-        if(file_exists("../app/views/$vista.php")){
-            ob_start();
-            include "../app/views/$vista.php";
-            $content = ob_get_clean();
-            return $content;
-        }
-        else{
-            echo "vista no encotrada ../app/views/$vista.php";
-        }
-        return "hola desde la pagina Home";
+
+    public function visitantes(){
+        $visitante = new VisitanteModel();
+        $data = $visitante->getVisitante();
+        return $this->view('HomeVisitantes', [
+            'title'=>'Visitantes',
+            'dataVisitantes'=>$data
+        ]);
     }
+
+    public function registro(){
+        return $this->view('HomeRegistro');
+    }
+    
 }
 ?>

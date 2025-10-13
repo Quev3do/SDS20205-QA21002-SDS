@@ -6,9 +6,9 @@ use app\controllers\HomeController;
 
 Route::get("/", [HomeController::class, 'index']);
 
-Route::get("/inicio/:flag", function($flag){
-    return ["title"=>"ejemplo"];
-});
+Route::get("/visitantes", [HomeController::class, 'visitantes']);
+
+Route::get("/registro", [HomeController::class, 'registro']);
 
 Route::dispatch();
 ?>
