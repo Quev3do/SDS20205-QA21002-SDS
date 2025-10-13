@@ -9,7 +9,7 @@
 <body>
     <H1 class="text-3xl font-bold underline text-clifford">VISITANTES</H1>
     <br>
-    <table class="w-5xl text-sm text-left rtl:text-right text-black-500 dark:text-black-900">
+    <table class="w-5xl text-sm text-left rtl:text-right text-black-500 dark:text-black-900 table-auto">
         <thead>
             <tr>
                 <th>ID</th>

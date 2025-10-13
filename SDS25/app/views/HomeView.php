@@ -7,8 +7,8 @@
     <title>Inicio</title>
 </head>
 <body>
-    <H1 class="text-3xl font-bold underline text-clifford">QUE GANAS DE CABECEAR UNA BALDOSA</H1>
-    <h4>kb2</h4>
+    <H1 class="text-3xl font-bold underline text-clifford">SDS 2025</H1>
+    <h4>quevedo@</h4>
     <br>
 
     <hr>
