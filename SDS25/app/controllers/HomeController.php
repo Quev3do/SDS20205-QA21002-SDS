@@ -21,5 +21,8 @@ class HomeController extends controller{
         return $this->view('HomeRegistro');
     }
     
+    public function registrar(){
+        
+    }
 }
 ?>
