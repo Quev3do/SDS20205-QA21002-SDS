@@ -20,9 +20,18 @@ class HomeController extends controller{
     public function registro(){
         return $this->view('HomeRegistro');
     }
-    
+
     public function registrar(){
-        
+        if($_POST){
+            $visita = new VisitanteModel();
+            $visita->guardarVisitante($_POST);
+            $data = $visita->getVisitante();
+            return $this->view('HomeVisitantes', [
+                'title'=>'Visitantes',
+                'dataVisitantes'=>$data
+            ]);
+        }
     }
+    
 }
 ?>
