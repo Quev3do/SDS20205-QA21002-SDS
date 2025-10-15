@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Registro</title>
+    <title>Inicio</title>
 </head>
 <body class="flex flex-col flex-wrap justify-space-between h-full w-full">
-    <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="inicio" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/aseisLogo.png" class="h-8" alt="SDS2025">
@@ -40,32 +40,22 @@
                 </div>
             </div>
         </nav>
-    <div class="w-full h-full flex flex-col items-center justify-center gap-8 flex-wrap my-6">
-    <H1 class="text-3xl">Registro de visitantes</H1>
-    <form action="registrar" method="POST" class="bg-white shadow-sm rounded px-8 pt-6 pb-8 mb-4">
-        <label class="block text-black text-sm mb-2 font-semibold" for="name">
-            Nombre:
-        </label>
-        <input type="text" name="name" id="name" require class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"><br>
-        <label class="block text-black text-sm mb-2 font-semibold" for="apellido">
-            Apellido: 
-        </label>
-        <input type="text" name="apellido" id="apellido" require class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"><br>
-        <label class="block text-black text-sm mb-2 font-semibold" for="correo">
-            Correo:
-        </label>
-        <input type="text" name="correo" id="correo" require class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"><br>
-        <label class="block text-black text-sm mb-2 font-semibold" for="carnet">
-            Carnet:
-        </label>
-        <input type="text" name="carnet" id="carnet" require class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"><br>
-        <div class="flex items-center justify-between mt-[20px]">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Registrarme</button>
-        </div>
-    </form>
-    </div>
+        <div class="w-full flex flex-col gap-5 items-center py-4">
+            <div class="h-20 bg-slate-400 w-220 text-center">
+                <h1 class="text-3xl">Antenitas Sarita</h1>
+                <div class="">
 
-    <footer class="bg-white dark:bg-gray-900">
+                </div>
+            </div>
+            <div class="h-20 bg-slate-400 w-220 text-center">
+                <h1 class="text-3xl">ASEIS</h1>
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+<footer class="bg-white dark:bg-gray-900">
     <div class="w-full mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
@@ -86,5 +76,6 @@
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="" class="hover:underline">ASEIS</a>. [inserte algo que diria Karla]</span>
     </div>
 </footer>
+
 </body>
 </html>

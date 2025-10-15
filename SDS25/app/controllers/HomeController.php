@@ -32,6 +32,10 @@ class HomeController extends controller{
             ]);
         }
     }
+
+    public function patrocinadores(){
+        return $this->view('PatrocinadoresView');
+    }
     
 }
 ?>

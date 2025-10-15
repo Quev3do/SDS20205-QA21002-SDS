@@ -12,5 +12,7 @@ Route::get("/registro", [HomeController::class, 'registro']);
 
 Route::post("/registrar", [HomeController::class, 'registrar']);
 
+Route::get("/patrocinadores", [HomeController::class, 'patrocinadores']);
+
 Route::dispatch();
 ?>

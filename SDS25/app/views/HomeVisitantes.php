@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title><?=$title?></title>
 </head>
-<body class="flex flex-col flex-wrap justify-space-between h-full w-full gap-5 items-center">
+<body class="flex flex-col flex-wrap justify-space-between h-full w-full">
        <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="inicio" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -33,13 +33,15 @@
                     <li>
                         <a href="visitantes" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Visitantes</a>
                     </li>
-                    
+                    <li>
+                        <a href="patrocinadores" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Patrocinadores</a>
+                    </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    <h1 class="text-3xl">Visitantes</h1>
-    <div class="flex flex-row justify-center w-full">
+    <div class="w-full h-full flex flex-col items-center justify-center gap-8 flex-wrap my-6">
+        <h1 class="text-3xl">Visitantes</h1>
         <table class="w-5xl text-sm text-left rtl:text-right text-black-500 dark:text-black-900 table-auto border-separate">
             <thead>
                 <tr>
@@ -63,7 +65,28 @@
             </tbody>
         </table>
     </div>
-    <br>
+
+    <footer class="bg-white dark:bg-gray-900">
+    <div class="w-full mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="images/aseisLogo.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SDS 2025 - ASEIS</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">ASEIS</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="" class="hover:underline">ASEIS</a>. [inserte algo que diria Karla]</span>
+    </div>
+</footer>
     
 </body>
 </html>
