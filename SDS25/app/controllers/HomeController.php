@@ -8,6 +8,12 @@ class HomeController extends controller{
         return $this->view('HomeView');
     }
 
+    public function sds(){
+        return $this->view('SDSView', [
+            'title'=>'SDS'
+        ]);
+    }
+
     public function visitantes(){
         $visitante = new VisitanteModel();
         $data = $visitante->getVisitante();
