@@ -5,12 +5,20 @@ use app\models\VisitanteModel;
 use Visitante;
 class HomeController extends controller{
     public function index(){
-        return $this->view('HomeView');
+        return $this->view('HomeView', [
+            'title'=>'Inicio'
+        ]);
     }
 
     public function sds(){
         return $this->view('SDSView', [
             'title'=>'SDS'
+        ]);
+    }
+
+    public function aseis(){
+        return $this->view('ASEISView', [
+            'title'=>'ASEIS'
         ]);
     }
 
@@ -24,7 +32,9 @@ class HomeController extends controller{
     }
 
     public function registro(){
-        return $this->view('HomeRegistro');
+        return $this->view('HomeRegistro', [
+            'title'=>'Registro'
+        ]);
     }
 
     public function registrar(){
@@ -40,7 +50,9 @@ class HomeController extends controller{
     }
 
     public function patrocinadores(){
-        return $this->view('PatrocinadoresView');
+        return $this->view('PatrocinadoresView', [
+            'title'=>'Patrocinadores'
+        ]);
     }
     
 }

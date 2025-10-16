@@ -9,6 +9,8 @@ Route::get("/inicio", [HomeController::class, 'index']);
 
 Route::get("/sds", [HomeController::class, 'sds']);
 
+Route::get("/aseis", [HomeController::class, 'aseis']);
+
 Route::get("/visitantes", [HomeController::class, 'visitantes']);
 
 Route::get("/registro", [HomeController::class, 'registro']);
