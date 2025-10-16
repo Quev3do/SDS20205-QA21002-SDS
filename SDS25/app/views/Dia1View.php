@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title><?=$title?></title>
 </head>
-<body class="flex flex-col flex-wrap justify-space-between h-full w-full">
+<body class="flex flex-col flex-wrap justify-space-between h-full w-full pt-22 pb-52 relative">
 
     
        <?php include 'navbar.html'; ?>
