@@ -8,26 +8,26 @@
 </head>
 <body class="flex flex-col flex-wrap justify-space-between h-full w-full pt-22 pb-52 relative">
        <?php include 'navbar.html'; ?>
-    <div class="w-full h-full flex flex-col items-center justify-center gap-8 flex-wrap my-18">
+    <div class="h-full flex flex-col items-center justify-center gap-8 flex-wrap mb-8 mt-6 relative overflow-x-auto ">
         <h1 class="text-3xl">Visitantes</h1>
-        <table class="w-5xl text-sm text-left rtl:text-right text-black-500 dark:text-black-900 table-auto border-separate">
-            <thead>
+        <table class="w-full text-sm text-left rtl:text-right text-black dark:text-white max-w-5xl">
+            <thead class="text-xs text-white uppercase bg-gradient-to-r from-slate-950 via-blue-800 to-blue-500 dark:text-white">
                 <tr>
-                    <th class="text-center">ID</th>
-                    <th class="text-center">Nombre</th>
-                    <th class="text-center">Apellido</th>
-                    <th class="text-center">Correo</th>
-                    <th class="text-center">Carnet</th>
+                    <th scope="col" class="px-6 py-3">ID</th>
+                    <th scope="col" class="px-6 py-3">Nombre</th>
+                    <th scope="col" class="px-6 py-3">Apellido</th>
+                    <th scope="col" class="px-6 py-3">Correo</th>
+                    <th scope="col" class="px-6 py-3">Carnet</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach($dataVisitantes as $itemPersona): ?>
-                    <tr>
-                        <td class="text-center"><?= $itemPersona['idVisitante'] ?></td>
-                        <td class="text-center"><?= $itemPersona['name'] ?></td>
-                        <td class="text-center"><?= $itemPersona['apellido'] ?></td>
-                        <td class="text-center"><?= $itemPersona['correo'] ?></td>
-                        <td class="text-center"><?= $itemPersona['carnet'] ?></td>
+                    <tr class="bg-white border-b dark:bg-slate-950 dark:border-slate-500 border-gray-100">
+                        <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"><?= $itemPersona['idVisitante'] ?></td>
+                        <td class="px-6 py-4"><?= $itemPersona['name'] ?></td>
+                        <td class="px-6 py-4"><?= $itemPersona['apellido'] ?></td>
+                        <td class="px-6 py-4"><?= $itemPersona['correo'] ?></td>
+                        <td class="px-6 py-4"><?= $itemPersona['carnet'] ?></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>

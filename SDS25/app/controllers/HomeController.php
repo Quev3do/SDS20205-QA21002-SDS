@@ -16,6 +16,12 @@ class HomeController extends controller{
         ]);
     }
 
+    public function miperfil(){
+        return $this->view('PerfilView', [
+            'title'=>'Mi Perfil'
+        ]);
+    }
+
     public function aseis(){
         return $this->view('ASEISView', [
             'title'=>'ASEIS'
