@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Registro</title>
 </head>
-<body class="flex flex-col flex-wrap justify-space-between h-full w-full pt-22 pb-52 relative bg-[url('../public/images/dia1/principio.jpg')] bg-cover bg-center">
+<body class="flex flex-col flex-wrap justify-space-between h-full w-full pt-22 pb-52 relative bg-[url('../public/images/dia1/principio.jpg')] bg-cover bg-center backdrop-blur-sm">
     <?php include 'navbar.html'; ?>
     <div class="w-full h-full flex flex-col items-center justify-center gap-8 flex-wrap my-6"> 
         <H1 class="text-3xl text-white">Registro de visitantes</H1>
