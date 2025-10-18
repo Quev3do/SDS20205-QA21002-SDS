@@ -6,52 +6,33 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title><?=$title?></title>
 </head>
-<body class="flex flex-col flex-wrap justify-space-between h-full w-full pt-22 pb-52 relative">
+<body class="flex flex-col flex-wrap justify-center h-full w-full pt-22 pb-52 relative bg-gradient-to-b from-blue-300 via-blue-100 to-white">  
         <?php include 'navbar.html'; ?>
-<!--
-tienda y antenas sarita
-aseis
-tecno accesorios
-villamotos
-Optica estrella de davidMyN beauty salon
-clinica radiologica y laboratorio clinico Dr Mendoza
--->
-        <div class="w-full flex flex-col gap-5 items-center py-4">
-            <div class="h-20 bg-slate-400 w-220 text-center">
-                <h1 class="text-3xl">Antenitas Sarita</h1>
-                <div class="">
-
-                </div>
-            </div>
-            <div class="h-20 bg-slate-400 w-220 text-center">
-                <h1 class="text-3xl">ASEIS</h1>
-                <div class="">
-
-                </div>
-            </div>
-            <div class="h-20 bg-slate-400 w-220 text-center">
-                <h1 class="text-3xl">Tecno accesorios</h1>
-                <div class="">
-
-                </div>
-            </div>
-            <div class="h-20 bg-slate-400 w-220 text-center">
-                <h1 class="text-3xl">villamotos</h1>
-                <div class="">
-
-                </div>
-            </div>
-            <div class="h-20 bg-slate-400 w-220 text-center">
-                <h1 class="text-3xl">Optica estrella de David</h1>
-                <div class="">
-
-                </div>
-            </div>
-            <div class="h-20 bg-slate-400 w-220 text-center">
-                <h1 class="text-3xl">Clinica radiologica Dr Mendoza</h1>
-                <div class="">
-
-                </div>
+        <div class="w-full h-full flex flex-col items-center justify-center gap-8 flex-wrap mt-10 mb-14">
+            <div class="min-w-80 h-full max-w-5xl">
+                <figure class="relative h-96 w-full">
+                    <img src="images/sarita.jpg"  alt="inicio" class="h-full rounded-xl object-cover object-center w-96" />
+                </figure>
+                <br>
+                <figure class="relative h-96 w-full">
+                    <img src="images/aseisLogo.png"  alt="inicio" class="h-full rounded-xl object-cover object-center w-96" />
+                </figure>
+                <br>
+                <figure class="relative h-96 w-full">
+                    <img src="images/tecno.jpg"  alt="inicio" class="h-full rounded-xl object-cover object-center w-96" />
+                </figure>
+                <br>
+                <figure class="relative h-96 w-full">
+                    <img src="images/villamotos.jpg"  alt="inicio" class="h-full rounded-xl object-cover object-center w-96" />
+                </figure>
+                <br>
+                <figure class="relative h-96 w-full">
+                    <img src="images/optica.jpg"  alt="inicio" class="h-full rounded-xl object-cover object-center w-200" />
+                </figure>
+                <br>
+                <figure class="relative h-96 w-full">
+                    <img src="images/clinica.jpg"  alt="inicio" class="h-full rounded-xl object-cover object-center w-200" />
+                </figure>
             </div>
         </div>
 
